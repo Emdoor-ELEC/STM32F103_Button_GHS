@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+usart\usart.c
+sys\sys.c
+delay\delay.c

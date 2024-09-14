@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+BEEP\beep.c
+KEY\key.c
+LED\led.c

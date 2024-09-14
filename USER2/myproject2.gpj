@@ -1,0 +1,5 @@
+#!gbuild
+[Subproject]
+HARDWARE\BEEP\beep.c
+HARDWARE\BEEP\key.c
+HARDWARE\BEEP\led.c

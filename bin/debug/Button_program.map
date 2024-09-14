@@ -1,0 +1,458 @@
+Host OS:	Windows
+ELXR: Copyright (C) 1983-2023 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2023.1.4
+Build Directory: [Directory] merry:/export/comp_autobuild/v2023.1_co_2023-01-31/win64-cross-linux86-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-2023-1-comp/src@731791 (built by auto-compiler)
+Revision Date: Wed Feb 01 11:06:48 2023
+
+Release Date: Wed Feb 01 11:00:00 2023
+
+
+
+
+Load Map Fri Sep 13 18:33:29 2024
+Image Summary
+
+  Section              Base      Size(hex)    Size(dec)  SecOffs
+  .picbase             20000000  00000000            0   0000000
+  .text                20000000  00002a7c        10876   0000140
+  .syscall             20002a7c  00000004            4   0002bbc
+  .intercall           20002a80  00000000            0   0000000
+  .interfunc           20002a80  00000000            0   0000000
+  .fixaddr             20002a80  00000000            0   0000000
+  .fixtype             20002a80  00000000            0   0000000
+  .rodata              20002a80  0000006f          111   0002bc0
+  .secinfo             20002af0  00000048           72   0002c30
+  .pidbase             20002b40  00000000            0   0000000
+  .sdabase             20002b40  00000000            0   0000000
+  .sbss                20002b40  00000000            0   0000000
+  .sdata               20002b40  00000000            0   0000000
+  .data                20002b40  00000008            8   0002c78
+  .tls.cond.data       20002b48  00000000            0   0000000
+  .bss                 20002b48  000006f0         1776   0000000
+  .tls.cond.bss        20003238  00000000            0   0000000
+  .ghcovfz             20003238  00000000            0   0000000
+  .ghcovcz             20003238  00000000            0   0000000
+  .ghcovdz             20003238  00000000            0   0000000
+  .heap                20003240  00000200          512   0000000
+  .stack               20003440  00000400         1024   0000000
+  .ghrettbl            00000000  000002d0          720   0002c80
+  .ghcalltbl           00000000  000002f8          760   0002f50
+  .ghtailcalltbl       00000000  00000010           16   0003248
+  .linfix              00000000  00000000            0   0000000
+  .gstackfix           00000000  00000000            0   0000000
+
+Load Map Fri Sep 13 18:33:29 2024
+Module Summary
+
+  Origin+Size    Section          Module
+20000000+0000d6  .text            crt0.o
+20002a80+00002c  .rodata          crt0.o
+00000000+000008  .ghrettbl        crt0.o
+00000000+00000c  .ghcalltbl       crt0.o
+20002b48+000002  .bss             main.o
+200000d6+0000be  .text            main.o
+20002aac+00000c  .rodata          main.o
+0000000c+000020  .ghcalltbl       main.o
+20000194+000012  .text            stm32f10x_it.o
+00000008+000014  .ghrettbl        stm32f10x_it.o
+20002b40+000004  .data            system_stm32f10x.o
+200001a6+0001c2  .text            system_stm32f10x.o
+0000002c+000008  .ghcalltbl       system_stm32f10x.o
+0000001c+000010  .ghrettbl        system_stm32f10x.o
+20002ab8+000010  .rodata          system_stm32f10x.o
+20000368+00003e  .text            beep.o
+00000034+00000c  .ghcalltbl       beep.o
+0000002c+000004  .ghrettbl        beep.o
+200003a6+0000f0  .text            key.o
+00000040+000034  .ghcalltbl       key.o
+00000030+000008  .ghrettbl        key.o
+20002b44+000001  .data            key.o
+20000496+000050  .text            led.o
+00000074+000014  .ghcalltbl       led.o
+00000038+000004  .ghrettbl        led.o
+20002b4c+0000dc  .bss             usart.o
+200004e6+000150  .text            usart.o
+0000003c+000010  .ghrettbl        usart.o
+00000088+000024  .ghcalltbl       usart.o
+20000636+00001e  .text            sys.o
+0000004c+00000c  .ghrettbl        sys.o
+20000654+0000c0  .text            delay.o
+20002c28+000004  .bss             delay.o
+000000ac+000004  .ghcalltbl       delay.o
+00000058+00000c  .ghrettbl        delay.o
+20000714+000130  .text            misc.o
+00000064+000014  .ghrettbl        misc.o
+20000844+000338  .text            stm32f10x_gpio.o
+000000b0+000040  .ghcalltbl       stm32f10x_gpio.o
+00000078+000048  .ghrettbl        stm32f10x_gpio.o
+20000b7c+0005a6  .text            stm32f10x_rcc.o
+000000c0+000080  .ghrettbl        stm32f10x_rcc.o
+000000f0+000008  .ghcalltbl       stm32f10x_rcc.o
+20002ac8+000014  .rodata          stm32f10x_rcc.o
+20001122+0003d8  .text            stm32f10x_usart.o
+000000f8+00002c  .ghcalltbl       stm32f10x_usart.o
+00000140+000074  .ghrettbl        stm32f10x_usart.o
+200014fc+000010  .text            libmulti.a
+20002c2c+000418  .bss             libmulti.a
+20002adc+000004  .rodata          libmulti.a
+000001b4+000008  .ghrettbl        libmulti.a
+2000150c+00001c  .text            libansi.a(ccprintf.o)
+00000124+000004  .ghcalltbl       libansi.a(ccprintf.o)
+000001bc+000004  .ghrettbl        libansi.a(ccprintf.o)
+20001528+000040  .text            libansi.a(ccexit.o)
+00000128+00000c  .ghcalltbl       libansi.a(ccexit.o)
+000001c0+000004  .ghrettbl        libansi.a(ccexit.o)
+20001568+0000e0  .text            libansi.a(ccvprntf.o)
+00000134+000030  .ghcalltbl       libansi.a(ccvprntf.o)
+000001c4+000008  .ghrettbl        libansi.a(ccvprntf.o)
+20001648+00006a  .text            libansi.a(ccbufsiz.o)
+20003044+000050  .bss             libansi.a(ccbufsiz.o)
+000001cc+00000c  .ghrettbl        libansi.a(ccbufsiz.o)
+200016b2+000018  .text            libansi.a(ccputcu.o)
+00000000+000004  .ghtailcalltbl   libansi.a(ccputcu.o)
+000001d8+000004  .ghrettbl        libansi.a(ccputcu.o)
+200016ca+000094  .text            libansi.a(ccflsbuf.o)
+00000164+000010  .ghcalltbl       libansi.a(ccflsbuf.o)
+000001dc+000004  .ghrettbl        libansi.a(ccflsbuf.o)
+2000175e+0000dc  .text            libansi.a(ccflock.o)
+00000174+000038  .ghcalltbl       libansi.a(ccflock.o)
+000001e0+000020  .ghrettbl        libansi.a(ccflock.o)
+2000183a+0000a8  .text            libansi.a(ccfflush.o)
+000001ac+000010  .ghcalltbl       libansi.a(ccfflush.o)
+00000200+000004  .ghrettbl        libansi.a(ccfflush.o)
+200018e2+000672  .text            libansi.a(ccvsprnt.o)
+000001bc+000078  .ghcalltbl       libansi.a(ccvsprnt.o)
+00000204+000020  .ghrettbl        libansi.a(ccvsprnt.o)
+00000004+000004  .ghtailcalltbl   libansi.a(ccvsprnt.o)
+20002ae0+00000f  .rodata          libansi.a(ccvsprnt.o)
+20001f54+000174  .text            libansi.a(ccllout.o)
+00000234+000024  .ghcalltbl       libansi.a(ccllout.o)
+00000224+000010  .ghrettbl        libansi.a(ccllout.o)
+200020c8+00001e  .text            libansi.a(ccstrnlen.o)
+00000234+000004  .ghrettbl        libansi.a(ccstrnlen.o)
+200020e6+000012  .text            libansi.a(ccstrlen.o)
+00000238+000004  .ghrettbl        libansi.a(ccstrlen.o)
+200020f8+000020  .text            libwc_u16.a(ccstorewc.o)
+0000023c+000008  .ghrettbl        libwc_u16.a(ccstorewc.o)
+00000008+000004  .ghtailcalltbl   libwc_u16.a(ccstorewc.o)
+20002118+000030  .text            libwc_u16.a(ccwctomb.o)
+00000244+000004  .ghrettbl        libwc_u16.a(ccwctomb.o)
+0000000c+000004  .ghtailcalltbl   libwc_u16.a(ccwctomb.o)
+20002148+00035e  .text            libstartup.a(ind_crt0.o)
+00000258+000018  .ghcalltbl       libstartup.a(ind_crt0.o)
+00000248+000004  .ghrettbl        libstartup.a(ind_crt0.o)
+200024a6+000088  .text            libstartup.a(ind_mset.o)
+0000024c+000004  .ghrettbl        libstartup.a(ind_mset.o)
+2000252e+0001bc  .text            libstartup.a(ind_mcpy.o)
+00000250+000004  .ghrettbl        libstartup.a(ind_mcpy.o)
+200026ea+000006  .text            libsys.a(ind_lock.o)
+00000254+00000c  .ghrettbl        libsys.a(ind_lock.o)
+20002b45+000001  .data            libsys.a(ind_lock.o)
+200026f0+000026  .text            libsys.a(ind_thrd.o)
+20003094+000004  .bss             libsys.a(ind_thrd.o)
+00000260+000020  .ghrettbl        libsys.a(ind_thrd.o)
+20002716+000086  .text            libsys.a(ind_iob.o)
+20003098+000194  .bss             libsys.a(ind_iob.o)
+20002b46+000002  .data            libsys.a(ind_iob.o)
+00000280+00000c  .ghrettbl        libsys.a(ind_iob.o)
+00000270+000010  .ghcalltbl       libsys.a(ind_iob.o)
+2000279c+00006c  .text            libsys.a(ind_exit.o)
+2000322c+000004  .bss             libsys.a(ind_exit.o)
+00000280+00001c  .ghcalltbl       libsys.a(ind_exit.o)
+0000028c+000004  .ghrettbl        libsys.a(ind_exit.o)
+20003230+000004  .bss             libsys.a(ind_errn.o)
+20002808+000022  .text            libsys.a(ind_errn.o)
+00000290+00000c  .ghrettbl        libsys.a(ind_errn.o)
+20002a7c+000004  .syscall         libsys.a(ind_dots.o)
+0000029c+000004  .ghrettbl        libsys.a(ind_dots.o)
+2000282c+00004c  .text            libsys.a(ind_call.o)
+000002a0+000008  .ghrettbl        libsys.a(ind_call.o)
+0000029c+000010  .ghcalltbl       libsys.a(ind_call.o)
+20002878+0000de  .text            libsys.a(ind_io.o)
+000002ac+000020  .ghcalltbl       libsys.a(ind_io.o)
+000002a8+000020  .ghrettbl        libsys.a(ind_io.o)
+20003234+000004  .bss             libsys.a(ind_crt1.o)
+20002956+0000fa  .text            libsys.a(ind_crt1.o)
+000002cc+00002c  .ghcalltbl       libsys.a(ind_crt1.o)
+20002a50+00002c  .text            libarch.a(indarchj.o)
+000002c8+000008  .ghrettbl        libarch.a(indarchj.o)
+20002af0+000048  .secinfo         <section info>
+
+Load Map Fri Sep 13 18:33:29 2024
+Global Symbols (sorted alphabetically)
+
+ .rodata          20002ac8+000004 ADCPrescTable..C.3A.5CUsers.5CUSER.5CDesktop.5CSTM32F103_Button_GHS.5Cobjs.5Cdebug.5CButton_program.5Cstm32f10x_rcc.
+ .rodata          20002ab8+000010 AHBPrescTable
+ .rodata          20002acc+000010 APBAHBPrescTable..C.3A.5CUsers.5CUSER.5CDesktop.5CSTM32F103_Button_GHS.5Cobjs.5Cdebug.5CButton_program.5Cstm32f10x_rcc.
+ .text            20000368+00003e BEEP_Init
+ .text            2000019a+000002 BusFault_Handler
+ .text            200001a0+000002 DebugMon_Handler
+ .text            20000906+000018 GPIO_AFIODeInit
+ .text            20000844+0000c2 GPIO_DeInit
+ .text            20000b66+000016 GPIO_ETH_MediaInterfaceConfig
+ .text            20000b26+000040 GPIO_EXTILineConfig
+ .text            20000a94+000016 GPIO_EventOutputCmd
+ .text            20000a64+000030 GPIO_EventOutputConfig
+ .text            2000091e+0000de GPIO_Init
+ .text            20000a52+000012 GPIO_PinLockConfig
+ .text            20000aaa+00007c GPIO_PinRemapConfig
+ .text            20000a1e+000006 GPIO_ReadInputData
+ .text            20000a0c+000012 GPIO_ReadInputDataBit
+ .text            20000a36+000006 GPIO_ReadOutputData
+ .text            20000a24+000012 GPIO_ReadOutputDataBit
+ .text            20000a40+000004 GPIO_ResetBits
+ .text            20000a3c+000004 GPIO_SetBits
+ .text            200009fc+000010 GPIO_StructInit
+ .text            20000a4e+000004 GPIO_Write
+ .text            20000a44+00000a GPIO_WriteBit
+ .text            20000196+000002 HardFault_Handler
+ .text            20000640+00000a INTX_DISABLE
+ .text            2000064a+00000a INTX_ENABLE
+ .text            200003a6+000040 KEY_Init
+ .text            200003e6+0000b0 KEY_Scan
+ .text            20000496+000050 LED_Init
+ .text            20000198+000002 MemManage_Handler
+ .text            20000194+000002 NMI_Handler
+ .text            20000734+000084 NVIC_Init
+ .text            20000714+000020 NVIC_PriorityGroupConfig
+ .text            200007b8+000022 NVIC_SetVectorTable
+ .text            200007da+000032 NVIC_SystemLPConfig
+ .text            200001a2+000002 PendSV_Handler
+ .text            20000db8+00002a RCC_ADCCLKConfig
+ .text            20000f56+000032 RCC_AHBPeriphClockCmd
+ .text            20000fba+000032 RCC_APB1PeriphClockCmd
+ .text            2000101e+000032 RCC_APB1PeriphResetCmd
+ .text            20000f88+000032 RCC_APB2PeriphClockCmd
+ .text            20000fec+000032 RCC_APB2PeriphResetCmd
+ .text            20000c24+00002c RCC_AdjustHSICalibrationValue
+ .text            20001050+000016 RCC_BackupResetCmd
+ .text            200010ca+00001e RCC_ClearFlag
+ .text            2000110c+000016 RCC_ClearITPendingBit
+ .text            20001066+000016 RCC_ClockSecuritySystemCmd
+ .text            20000b7c+000044 RCC_DeInit
+ .text            20000e50+000106 RCC_GetClocksFreq
+ .text            20001092+000038 RCC_GetFlagStatus
+ .text            200010e8+000024 RCC_GetITStatus
+ .text            20000cd2+00001a RCC_GetSYSCLKSource
+ .text            20000cec+00002a RCC_HCLKConfig
+ .text            20000bc0+00003a RCC_HSEConfig
+ .text            20000c50+000016 RCC_HSICmd
+ .text            20000d6c+000036 RCC_ITConfig
+ .text            20000de2+000026 RCC_LSEConfig
+ .text            20000e08+000016 RCC_LSICmd
+ .text            2000107c+000016 RCC_MCOConfig
+ .text            20000d16+00002a RCC_PCLK1Config
+ .text            20000d40+00002c RCC_PCLK2Config
+ .text            20000c92+000016 RCC_PLLCmd
+ .text            20000c66+00002c RCC_PLLConfig
+ .text            20000e3a+000016 RCC_RTCCLKCmd
+ .text            20000e1e+00001c RCC_RTCCLKConfig
+ .text            20000ca8+00002a RCC_SYSCLKConfig
+ .text            20000da2+000016 RCC_USBCLKConfig
+ .text            20000bfa+00002a RCC_WaitForHSEStartUp
+ .text            2000019e+000002 SVC_Handler
+ .text            200002c2+00000c SetSysClock..C.3A.5CUsers.5CUSER.5CDesktop.5CSTM32F103_Button_GHS.5Cobjs.5Cdebug.5CButton_program.5Csystem_stm32f10x.
+ .text            200002ce+00009a SetSysClockTo72..C.3A.5CUsers.5CUSER.5CDesktop.5CSTM32F103_Button_GHS.5Cobjs.5Cdebug.5CButton_program.5Csystem_stm32f10x.
+ .text            2000080c+000038 SysTick_CLKSourceConfig
+ .text            200001a4+000002 SysTick_Handler
+ .data            20002b40+000004 SystemCoreClock
+ .text            20000208+0000ba SystemCoreClockUpdate
+ .text            200001a6+000062 SystemInit
+ .text            200005bc+00007a USART1_IRQHandler
+ .text            20001490+000008 USART_ClearFlag
+ .text            200014e6+000014 USART_ClearITPendingBit
+ .text            200012a8+00002a USART_ClockInit
+ .text            200012d2+000012 USART_ClockStructInit
+ .text            200012e4+000016 USART_Cmd
+ .text            2000133a+000016 USART_DMACmd
+ .text            20001122+00009a USART_DeInit
+ .text            2000147e+000012 USART_GetFlagStatus
+ .text            20001498+00004e USART_GetITStatus
+ .text            20001416+000016 USART_HalfDuplexCmd
+ .text            200012fa+000040 USART_ITConfig
+ .text            200011bc+0000d0 USART_Init
+ .text            20001468+000016 USART_IrDACmd
+ .text            20001458+000010 USART_IrDAConfig
+ .text            20001386+000010 USART_LINBreakDetectLengthConfig
+ .text            20001396+000016 USART_LINCmd
+ .text            20001442+000016 USART_OneBitMethodCmd
+ .text            2000142c+000016 USART_OverSampling8Cmd
+ .bss             20002b60+0000c8 USART_RX_BUF
+ .bss             20002b4c+000002 USART_RX_STA
+ .text            200013b4+000008 USART_ReceiveData
+ .text            20001370+000016 USART_ReceiverWakeUpCmd
+ .text            200013bc+00000a USART_SendBreak
+ .text            200013ac+000008 USART_SendData
+ .text            20001350+000010 USART_SetAddress
+ .text            200013c6+000014 USART_SetGuardTime
+ .text            200013da+000010 USART_SetPrescaler
+ .text            200013ea+000016 USART_SmartCardCmd
+ .text            20001400+000016 USART_SmartCardNACKCmd
+ .text            2000128c+00001c USART_StructInit
+ .text            20001360+000010 USART_WakeUpConfig
+ .text            2000019c+000002 UsageFault_Handler
+ .text            20000636+00000a WFI_SET
+ .text            2000279c+00004c _Exit
+                  00000000+000000 __atexit_cleanup_func
+                  00000000+000000 __cpp_exception_cleanup
+ .syscall         20002a7c+000004 __dotsyscall
+ .data            20002b46+000002 __gh_FOPEN_MAX
+ .text            2000166c+000022 __gh_bufclose
+ .bss             20003044+000050 __gh_buffersizes
+ .text            2000168e+000024 __gh_bufinit
+ .text            20001648+000024 __gh_bufsize
+ .text            2000179c+000046 __gh_check_lock_file
+ .text            20002814+00000a __gh_errno_ptr
+                  00000000+000000 __gh_file_reservations
+                  00000000+000000 __gh_float_printf
+ .text            2000281e+00000c __gh_get_errno
+ .text            2000192c+000032 __gh_hexout
+ .text            2000274e+00004e __gh_iob_init
+ .text            200026ee+000002 __gh_lock_init
+ .text            20002024+000024 __gh_long_long_printf
+ .text            2000195e+000032 __gh_octhexout
+ .text            20001990+000020 __gh_outchars
+ .text            200019b0+000006 __gh_outspaces
+ .text            20002808+00000c __gh_set_errno
+ .text            200020f8+00000a __gh_store_wc
+ .text            200019b6+000200 __gh_strout
+ .text            20002048+000080 __gh_uns_long_long_printf
+ .text            20001f40+000014 __gh_vsprintf
+ .text            20002102+000016 __gh_wctomb
+ .text            200018e2+000020 __gh_xxdecout
+ .text            200026ea+000002 __ghsLock
+ .text            200026ec+000002 __ghsUnlock
+ .text            200026f0+000012 __ghs_GetThreadLocalStorageItem
+ .text            20002706+000002 __ghs_RestoreSignalContext
+ .text            20002702+000004 __ghs_SaveSignalContext
+ .text            200027e8+000020 __ghs_at_exit
+                  00000000+000000 __ghs_board_cache_sync
+                  00000000+000000 __ghs_board_devices_init
+                  00000000+000000 __ghs_board_memory_init
+                  00000000+000000 __ghs_checksum
+                  00000000+000000 __ghs_coverage_init
+                  00000000+000000 __ghs_cpp_exception_cleanup
+                  00000000+000000 __ghs_cpp_exception_init
+                  00000001+000000 __ghs_cxx_do_thread_safe_local_static_inits
+                  00000000+000000 __ghs_decompress
+                  00000000+000000 __ghs_do_fp_init
+                  63d9d748+000000 __ghs_elxr_revision
+                  0003164a+000000 __ghs_elxr_version
+ .text            200000d4+000002 __ghs_enterblock_func
+ .text            20002712+000002 __ghs_flock_create
+ .text            20002714+000002 __ghs_flock_destroy
+ .text            20002708+000002 __ghs_flock_file
+ .text            20001812+000028 __ghs_flock_in_use
+ .text            20002716+00002a __ghs_flock_ptr
+ .text            20002740+00000e __ghs_flock_word
+ .text            2000270c+000006 __ghs_ftrylock_file
+ .text            2000270a+000002 __ghs_funlock_file
+ .text            200028f6+000016 __ghs_hostio_close
+ .text            200028de+000018 __ghs_hostio_creat
+ .text            2000293c+00001a __ghs_hostio_fcntl
+ .text            2000290c+00001a __ghs_hostio_lseek
+ .text            200028ac+000032 __ghs_hostio_open
+ .text            20002892+00001a __ghs_hostio_read
+ .text            20002926+000016 __ghs_hostio_unlink
+ .text            20002878+00001a __ghs_hostio_write
+ .text            20002148+00035e __ghs_ind_crt0
+ .text            20002956+0000fa __ghs_ind_crt1
+                  00000000+000000 __ghs_init_r4
+                  00000000+000000 __ghs_init_r5
+                  00000000+000000 __ghs_init_r6
+ .syscall         20002a7c+000004 __ghs_initial_dotsyscall
+                  00000002+000000 __ghs_log_fee_level
+                  00000000+000000 __ghs_malloc_init
+                  00000000+000000 __ghs_manprf_init
+ .text            20001bb6+00038a __ghs_printf_common
+                  00000000+000000 __ghs_rambootcodeend
+                  00000000+000000 __ghs_rambootcodestart
+                  20010000+000000 __ghs_ramend
+                  20000000+000000 __ghs_ramstart
+                  00000000+000000 __ghs_rombootcodeend
+                  00000000+000000 __ghs_rombootcodestart
+                  08080000+000000 __ghs_romend
+                  08000000+000000 __ghs_romstart
+                  00000000+000000 __ghs_set_stack_chk_guard
+ .data            20002b45+000001 __ghs_single_threaded
+ .text            200020e6+000012 __ghs_strlen
+ .text            2000282c+000024 __ghs_syscall
+ .text            20002850+000028 __ghs_syscall64
+ .text            20002118+00002c __ghs_u32tomb
+                  00000000+000000 __ghs_undefined_func
+                  00000000+000000 __ghs_validate_ghtws
+ .text            20001568+0000ce __ghs_vfprintf_with_rtch
+ .fixaddr         20002a80+000000 __ghsbegin_fixaddr
+ .fixtype         20002a80+000000 __ghsbegin_fixtype
+ .picbase         20000000+000000 __ghsbegin_picbase
+ .pidbase         20002b40+000000 __ghsbegin_pidbase
+                  00000000+000000 __ghsbegin_robase
+ .secinfo         20002af0+000000 __ghsbegin_secinfo
+ .secinfo         20002b38+000000 __ghsbinfo_aclear
+ .secinfo         20002b38+000000 __ghsbinfo_acopy
+ .secinfo         20002af0+000048 __ghsbinfo_clear
+ .secinfo         20002b38+000000 __ghsbinfo_comacopy
+ .secinfo         20002b38+000000 __ghsbinfo_comcopy
+ .secinfo         20002b38+000000 __ghsbinfo_comtcopy
+ .secinfo         20002b38+000000 __ghsbinfo_copy
+ .secinfo         20002b38+000000 __ghsbinfo_tcopy
+ .secinfo         20002b38+000000 __ghseinfo_clear
+ .secinfo         20002b38+000000 __ghseinfo_comcopy
+ .secinfo         20002b38+000000 __ghseinfo_copy
+ .fixaddr         20002a80+000000 __ghsend_fixaddr
+ .stack           20003840+000000 __ghsend_stack
+ .bss             20002b50+000010 __stdout
+ .text            20002a50+000012 __udiv10
+ .text            20002a62+00001a __umod10
+                  00000000+000000 _cleanup
+ .text            2000279c+00004c _exit
+ .text            200016ca+000094 _flsbuf
+ .bss             20003098+000140 _iob
+ .bss             200031d8+000054 _iob_lock
+ .bss             20003014+000030 _multiArgs
+ .rodata          20002adc+000004 _multibufSize
+ .bss             20002c2c+0003e8 _multibuffer
+ .text            20001500+000008 _multiend
+ .text            20001508+000004 _multiend2
+ .text            20000000+000008 _start
+ .text            20000008+0000cc _start_T
+ .text            200004e6+000002 _sys_exit
+ .text            200028f6+000016 close
+ .text            200028de+000018 creat
+ .text            20000654+00003c delay_init
+ .text            200006d2+000042 delay_ms
+ .text            20000690+000042 delay_us
+ .bss             20003234+000004 environ
+ .bss             20003230+000004 errno
+ .text            20001528+000040 exit
+ .bss             20002c2a+000002 fac_ms..C.3A.5CUsers.5CUSER.5CDesktop.5CSTM32F103_Button_GHS.5Cobjs.5Cdebug.5CButton_program.5Cdelay.
+ .bss             20002c28+000001 fac_us..C.3A.5CUsers.5CUSER.5CDesktop.5CSTM32F103_Button_GHS.5Cobjs.5Cdebug.5CButton_program.5Cdelay.
+ .text            2000293c+00001a fcntl
+ .text            2000183a+0000a8 fflush
+ .text            2000175e+000012 flockcreate
+ .text            20001770+000016 flockdestroy
+ .text            20001786+000016 flockfile
+ .text            200004e8+000028 fputc
+ .text            200017f8+00001a ftrylockfile
+ .text            200017e2+000016 funlockfile
+ .data            20002b44+000001 key_up.KEY_Scan..C.3A.5CUsers.5CUSER.5CDesktop.5CSTM32F103_Button_GHS.5Cobjs.5Cdebug.5CButton_program.5Ckey..0
+ .text            2000290c+00001a lseek
+ .text            200000d6+0000be main
+ .text            2000252e+0001bc memcpy
+ .text            200024a6+000088 memset
+ .bss             20002b48+000002 num_1
+ .text            200028ac+000032 open
+ .text            2000150c+00001c printf
+ .text            200016b2+000018 putc_unlocked
+ .text            20002892+00001a read
+ .text            200020e6+000012 strlen
+ .text            200020c8+00001e strnlen
+ .text            20000510+0000ac uart_init
+ .text            20002926+000016 unlink
+ .text            20001902+00002a unsout..trg.2Fthumba2.2Fobjs.2Flibs.2Flibansi.2Fccvsprnt.
+ .text            20001636+000012 vfprintf
+ .text            20002144+000004 wctomb
+ .text            20002878+00001a write
+ .text            20001f6e+0000b6 xdecout..trg.2Fthumba2.2Fobjs.2Flibs.2Flibansi.2Fccllout.
+ .text            20001f54+00001a xxdecout..trg.2Fthumba2.2Fobjs.2Flibs.2Flibansi.2Fccllout.

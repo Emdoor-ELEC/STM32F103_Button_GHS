@@ -1,0 +1,34 @@
+target_connection {
+     {
+        title = "Generic-ARM - ARM Cortex-M3 with Simulator for ARM (simarm)"
+        type = "Simulator for ARM (simarm)"
+        short_type = "simarm"
+        args = " -cpu=cortexm3   "
+        command = "simarm -cpu=cortexm3   "
+        logfile = "simarm"
+        mode = ""
+        setup_script = ""
+        component_alias = ""
+        run_mode_partner = ""
+        run_mode_policy = ""
+        sane = "no"
+        log = "no"
+        timestamp = "0"
+    }
+     {
+        title = "Generic-ARM - ARM Cortex-M3 with Green Hills Debug Probe (mpserv)"
+        type = "Green Hills Debug Probe (mpserv)"
+        short_type = "mpserv"
+        args = "  -usb 403757"
+        command = "mpserv  -usb 403757"
+        logfile = ""
+        mode = ""
+        setup_script = "mpserv_standard.mbs"
+        component_alias = ""
+        run_mode_partner = ""
+        run_mode_policy = ""
+        sane = "yes"
+        log = "no"
+        timestamp = "0"
+    }
+}

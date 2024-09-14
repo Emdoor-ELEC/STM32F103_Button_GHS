@@ -1,0 +1,12 @@
+#!gbuild
+[Program]
+	-object_dir=${%option_value(-object_dir)}/Button_program
+main.c
+stm32f10x_it.c
+system_stm32f10x.c
+tgt\standalone_ram.ld
+HARDWARE\HARDWARE.gpj
+SYSTEM\System.gpj		
+CORE\Core.gpj		
+STM32F10x_FWLib\FWlib.gpj	
+

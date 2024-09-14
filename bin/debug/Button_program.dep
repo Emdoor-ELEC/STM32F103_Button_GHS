@@ -1,0 +1,32 @@
+C:\Users\USER\Desktop\STM32F103_Button_GHS\bin\debug\Button_program: \
+ tgt\standalone_ram.ld C:\ghs\comp_202314\lib\thumba2\crt0.o \
+ objs\debug\Button_program\main.o objs\debug\Button_program\stm32f10x_it.o \
+ objs\debug\Button_program\system_stm32f10x.o \
+ objs\debug\Button_program\beep.o objs\debug\Button_program\key.o \
+ objs\debug\Button_program\led.o objs\debug\Button_program\usart.o \
+ objs\debug\Button_program\sys.o objs\debug\Button_program\delay.o \
+ objs\debug\Button_program\core_cm3.o objs\debug\Button_program\misc.o \
+ objs\debug\Button_program\stm32f10x_gpio.o \
+ objs\debug\Button_program\stm32f10x_rcc.o \
+ objs\debug\Button_program\stm32f10x_usart.o \
+ C:\ghs\comp_202314\lib\thumba2\libmulti.a \
+ C:\ghs\comp_202314\lib\thumba2\libarena_malloc.a \
+ C:\ghs\comp_202314\lib\thumba2\libwchar_u16.a \
+ C:\ghs\comp_202314\lib\thumba2\libansi.a \
+ C:\ghs\comp_202314\lib\thumba2\libwc_u16.a \
+ C:\ghs\comp_202314\lib\thumba2\libmath_sf.a \
+ C:\ghs\comp_202314\lib\thumba2\libind_sf.a \
+ C:\ghs\comp_202314\lib\thumba2\libstartup.a \
+ C:\ghs\comp_202314\lib\thumba2\libsys.a \
+ C:\ghs\comp_202314\lib\thumba2\libarch.a
+
+:cmdList=ccarm $(FILETYPEOPTIONS) $(OBJECTS) -MD -IC:\Users\USER\Desktop\STM32F103_Button_GHS\CORE -IC:\Users\USER\Desktop\STM32F103_Button_GHS\HARDWARE\BEEP -IC:\Users\USER\Desktop\STM32F103_Button_GHS\HARDWARE\LED -IC:\Users\USER\Desktop\STM32F103_Button_GHS\HARDWARE\KEY -IC:\Users\USER\Desktop\STM32F103_Button_GHS\STM32F10x_FWLib\inc -IC:\Users\USER\Desktop\STM32F103_Button_GHS\SYSTEM\delay -IC:\Users\USER\Desktop\STM32F103_Button_GHS\SYSTEM\sys -IC:\Users\USER\Desktop\STM32F103_Button_GHS\SYSTEM\usart -IC:\Users\USER\Desktop\STM32F103_Button_GHS\USER -G -Odebug -bsp generic -cpu=cortexm3 -align8 -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -c99 --diag_remark 223 --gnu_asm -object_dir=objs\debug\Button_program -top_project C:\Users\USER\Desktop\STM32F103_Button_GHS\default.gpj -o C:\Users\USER\Desktop\STM32F103_Button_GHS\bin\debug\Button_program ; 
+:cmdHash=0xa01b4799
+
+:objList=objs\debug\Button_program\main.o objs\debug\Button_program\stm32f10x_it.o objs\debug\Button_program\system_stm32f10x.o tgt\standalone_ram.ld objs\debug\Button_program\beep.o objs\debug\Button_program\key.o objs\debug\Button_program\led.o objs\debug\Button_program\usart.o objs\debug\Button_program\sys.o objs\debug\Button_program\delay.o objs\debug\Button_program\core_cm3.o objs\debug\Button_program\misc.o objs\debug\Button_program\stm32f10x_gpio.o objs\debug\Button_program\stm32f10x_rcc.o objs\debug\Button_program\stm32f10x_usart.o ; 
+:objHash=0x3372ad4d
+
+:installDir=c:\ghs\comp_202314
+:installDirHash=0x9d2c844f
+
+:config=DBG

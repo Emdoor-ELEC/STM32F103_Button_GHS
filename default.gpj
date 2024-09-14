@@ -1,0 +1,31 @@
+#!gbuild
+defineConfig ("Debug" "DBG" "tgt\debug.gpc")
+defineConfig ("Release" "REL" "tgt\release.gpc")
+primaryTarget=arm_standalone.tgt
+#component top_level_project
+[Project]
+	-bsp generic
+	-cpu=cortexm3
+	-align8
+	:sourceDir=.
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\CORE
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\HARDWARE\BEEP
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\HARDWARE\LED
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\HARDWARE\KEY
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\STM32F10x_FWLib\inc
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\SYSTEM\delay
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\SYSTEM\sys
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\SYSTEM\usart
+	-IC:\Users\USER\Desktop\STM32F103_Button_GHS\USER
+	-DSTM32F10X_HD
+	-DUSE_STDPERIPH_DRIVER
+	-passsource
+	-c99
+	--diag_remark 223
+	--gnu_asm
+USER\Button_program.gpj		[Program]
+#HARDWARE\HARDWARE.gpj		[Subproject]
+#SYSTEM\System.gpj		[Project]
+#CORE\Core.gpj		[Project]
+#STM32F10x_FWLib\FWlib.gpj		[Project]
+tgt\resources.gpj		[Project]
